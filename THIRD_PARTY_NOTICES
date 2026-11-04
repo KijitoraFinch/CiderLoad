@@ -1,0 +1,42 @@
+Third-party notices for CiderLoad
+
+These components retain their original licenses. Include this file and the
+licenses directory when redistributing CiderLoad binaries.
+
+Go runtime and standard library
+------------------------------
+Source: https://go.dev/
+License: BSD-3-Clause (licenses/Go-BSD-3-Clause.txt)
+Additional patent grant: licenses/Go-PATENTS.txt
+
+The release was checked with Go 1.27.3. Its standard library also incorporates
+golang.org/x/crypto, golang.org/x/net and golang.org/x/text. Their license texts
+are identical to the Go BSD-3-Clause text included here.
+Source: https://github.com/golang/go/tree/go1.27.3/src/vendor/golang.org/x
+
+golang.org/x/net/publicsuffix v0.59.0
+----------------------------------
+Source: https://github.com/golang/net/tree/v0.59.0/publicsuffix
+License: BSD-3-Clause (licenses/Go-BSD-3-Clause.txt)
+Additional patent grant: licenses/Go-PATENTS.txt
+
+Public Suffix List data
+----------------------
+The publicsuffix package embeds a generated representation of the Public
+Suffix List. The upstream data is available under MPL-2.0, whose full text
+is included in licenses/MPL-2.0.txt.
+
+Upstream notice:
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+Source for the embedded snapshot:
+https://github.com/publicsuffix/list/blob/d6c92f1bbb7433e5db7b8405c25d4035fb8ff376/public_suffix_list.dat
+
+The generated data and its generator are available at:
+https://github.com/golang/net/tree/v0.59.0/publicsuffix
+
+CiderLoad uses this dependency without modification. Its source and data
+retain the licenses above; CiderLoad's dual license applies to CiderLoad's
+original code.

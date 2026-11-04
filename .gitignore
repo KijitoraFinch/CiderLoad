@@ -1,0 +1,7 @@
+/build/
+__pycache__/
+*.pyc
+DESIGN.md
+REVIEW_NOTES.md
+BENCHMARKS.md
+.*.sw?
